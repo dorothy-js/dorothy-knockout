@@ -1,0 +1,39 @@
+{
+  "name": "@pollon/knockout",
+  "version": "1.0.0",
+  "description": "A Pollon framework plugin that enables knockoutjs as a template engine",
+  "main": "dist/pollom-knockout.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pollon-js/knockout.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "dev:build": "rollup -c ./build/index.js | rollup -c ./build/components.js | rollup -c ./build/partials.js",
+    "prepublish": "npm run dev:build"
+  },
+  "keywords": [
+    "pollon",
+    "knockout",
+    "plugin"
+  ],
+  "author": "Francesco Lasaracina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pollon-js/knockout/issues"
+  },
+  "homepage": "https://github.com/pollon-js/knockout#readme",
+  "dependencies": {
+    "@pollon/pollon": "^1.0.0",
+    "knockout": "^3.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "core-js": "^3.6.4",
+    "rollup": "^1.31.1",
+    "@rollup/plugin-babel": "^5.0.3",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}
